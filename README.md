@@ -1,11 +1,7 @@
-
 # VEGA TRADING PROTOCOL - TRADING AND ORDER MANAGEMENT - UI
 This connects to the Vega protocol, and provides live trading and order management functionalities.
 
-Youtube Link - https://www.youtube.com/watch?v=GSsW6wy-6zY
-
 ![](https://j.gifs.com/oVr0ON.gif)
-
  
 ### Monitor
 1. Display a list of the markets that a trader has an open position or active order/s on. [IMPLEMENTED]
@@ -34,6 +30,13 @@ Youtube Link - https://www.youtube.com/watch?v=GSsW6wy-6zY
 3. Place a buy or market sell order [IMPLEMENTED]
 4. Optionally allow configuring order type and price / time in force [IMPLEMENTED] (LIMIT/GTT has not been implemented)
 
+YouTube Video Link - 
+
+<p align="center">
+   <a target="_blank" href="https://www.youtube.com/watch?v=r00ynVCG4Jc">
+    <img src="https://user-images.githubusercontent.com/53361416/87871239-55e7fe00-c9cc-11ea-9a5a-a49b45865933.png" />
+   </a>
+</p>
 
 For Running UI Locally...
   ```sh
