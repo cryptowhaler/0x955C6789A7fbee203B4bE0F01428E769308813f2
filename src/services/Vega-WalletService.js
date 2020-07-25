@@ -18,7 +18,7 @@ class VegaWalletService {
         VegaKeys.token = res.data.token;
         // console.log('VEGA KEYS  ', VegaKeys.name, VegaKeys.token);
 
-        const pub_res = await this.getPubKeys(obj.pass);
+        const pub_res = await this.getPubKeys(obj.passphrase);
         // console.log('response from pub_res call ' + pub_res);
         if (pub_res.status === 200) {
           return { status: 200, msg: 'Login Successful - Welcome ' + name, };
@@ -78,7 +78,7 @@ class VegaWalletService {
         let count = Object.keys(res.data.keys).length;     //number of keys
         // console.log('count ' + count);
 
-        if (count <= 1) {                              //if no key available
+        if (count < 1) {                              //if no key available
           const gen = await this.generatenewPubKeys(pass);
           // console.log(gen);
           return gen;
