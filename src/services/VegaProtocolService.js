@@ -644,11 +644,12 @@ class VegaProtocolService {
     let path = '/parties/' + partyid + '/accounts';
     let responsebody = {'marketID':markid,'type':type,'asset':asset,};
     try {
-      let response= await axios.get(this.main_api + path,responsebody);
+      let response= await axios.get(this.main_api + path, {params: responsebody,});
       return {status: response.status,data: response.data,};
     }
     catch {
       // console.log('Get accounts by party Failed.');
+      return {status: 404,data: 'Get accounts by party Failed.',};
     }
   }    
     
